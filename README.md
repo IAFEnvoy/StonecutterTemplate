@@ -1,8 +1,22 @@
-# Mod Template
+# Stonecutter Template
 
-This is a multi-loader mod template for Fabric and Neoforge utilizing stonecutter. This is the Java-only version 
-of mod-template-kotlin.
-It's largely been adapted from KikuGie's Elytra Trims rewrite following major feature updates to Stonecutter. 
-Feel free to use, although be aware that no support is officially offered or guaranteed.
+This is a multi-loader mod template for Fabric, Forge and NeoForge
 
-### Configure your project first in `gradle.properties`!
+## Supported versions
+
+- Fabric 1.14+
+- Forge 1.17+
+- NeoForge 1.20.5+
+
+## Before Use
+
+- Configure your project's metadata in `gradle.properties`.
+- If you want to use mixins, uncomment mixin processors in `build.forge.gradle.kts`, create mixin files and add to
+  `fabric.mod.json` and `neoforge.mods.toml`
+
+## Useful Links
+
+- Stonecutter docs: https://stonecutter.kikugie.dev/
+- Versions select guideline: https://stonecutter.kikugie.dev/wiki/start/#version-compatibility
+- Ceres (Fast dependencies search): https://ceres.mcdev.tech/
+- Parchment versions index: https://parchmentmc.org/docs/getting-started
