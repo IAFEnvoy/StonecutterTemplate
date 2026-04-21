@@ -80,10 +80,10 @@ tasks.named<ProcessResources>("processResources") {
         this["mod_repo_url"] = project.property("mod.repo_url") as String
         this["mod_license"] = project.property("mod.license") as String
         this["mod_logo"] = project.property("mod.logo") as String
-        this["supported_minecraft_versions"] = supportedMinecraftVersions.joinToString(",") { x -> "\"${x}\"" }
+        this["minecraft_version_range_fabric"] = project.property("deps.minecraft_version_range") as String
     }
 
-    filesMatching(listOf("fabric.mod.json", "META-INF/neoforge.mods.toml", "META-INF/mods.toml")) {
+    filesMatching(listOf("fabric.mod.json")) {
         expand(props)
     }
 }
